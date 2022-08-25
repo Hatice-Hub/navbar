@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(background.jpg) fixed center;
+    font-family:sans-serif ;
+}
+.menu{
+    background: hsl(206, 18%, 85%, 0.3);
+    text-align: center;
+}
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menu ul li{
+    width: 150px;
+    margin: 7px;
+    padding: 15px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #161d27;  
+}
+.active, .menu ul li:hover{
+background: #dfdcd4;
+border-radius: 10px;
+}
+.menu .fa{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: hsl(206, 18%, 85%, 0.3);
+    margin-top: 17px;
+    margin-left: -15px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.menu ul li:hover .sub-menu-1 ul{
+display: block;
+}
+.menu ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: dotted thin;
+    background: transparent;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.menu ul li:hover .sub-menu-1 ul li a:hover{
+    color: black;
+}
+.fa-caret-right{
+    font-size: 16px;
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+position: absolute;
+display: block;
+margin-top: 0px;
+margin-left: 136px;
+background:hsl(206, 18%, 85%, 0.3) ;
+border-radius: 10px;
+}
